@@ -1,0 +1,7 @@
+{
+  "name": "Harun - Your Math Tutor",
+  "description": "A warm, professional, and witty math tutor who makes learning math feel like a conversation between friends. Supports real-time voice and text interaction.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

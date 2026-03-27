@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-serif bg-[#f5f5f0] text-[#1a1a1a];
+  }
+}
+
+/* Custom Markdown/Math Styles */
+.markdown-body {
+  @apply leading-relaxed;
+}
+
+.markdown-body h2 {
+  @apply text-xl font-bold mt-4 mb-2 text-[#5A5A40];
+}
+
+.markdown-body h3 {
+  @apply text-lg font-semibold mt-3 mb-1 text-[#5A5A40]/80;
+}
+
+.markdown-body p {
+  @apply mb-3;
+}
+
+.markdown-body ul, .markdown-body ol {
+  @apply ml-6 mb-3 list-disc;
+}
+
+.markdown-body code {
+  @apply bg-[#5A5A40]/10 px-1 rounded font-mono text-sm;
+}
+
+.katex-display {
+  @apply my-4 overflow-x-auto overflow-y-hidden py-2;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#5A5A40]/20 rounded-full hover:bg-[#5A5A40]/40 transition-colors;
+}
